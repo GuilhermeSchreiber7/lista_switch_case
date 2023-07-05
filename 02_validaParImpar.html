@@ -5,10 +5,19 @@
     */
 
     //ENTRADA
-
+    const number = Number(prompt(`informe um número`).trim().replace(",", "."))
     
     //PROCESSAMENTO
-
+   switch (number % 2){
+    case 0:
+        alert(`esse número é par`)
+    break;
+    case 1: 
+    alert(`esse número é impar`)
+    break;
+    default:
+        alert(`valor inválido`)
+   }
     
     //SAÍDA
 
