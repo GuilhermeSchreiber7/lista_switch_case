@@ -33,10 +33,10 @@
         default : alert(`operação inválida`)
             break;
     }
-    switch (opera) {
-        case opera < 0 : final = final + ", o número é negativo"
+    switch (opera < 0) {
+        case true : final = final + ", o número é negativo"
             break;
-        case opera > 0 : final = final + ", o número é positivo"
+        case false > 0 : final = final + ", o número é positivo"
             break;
         default: final = final + ", o número é neutro"
             break;
