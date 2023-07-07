@@ -30,31 +30,24 @@
             opera = num1 / num2
             final = final + opera
             break;
-        default:
-            alert(`operação inválida`)
+        default : alert(`operação inválida`)
             break;
     }
     switch (opera) {
-        case opera < 0:
-            final = final + ", o número é negativo"
+        case opera < 0 : final = final + ", o número é negativo"
             break;
-        case opera > 0:
-            final = final + ", o número é positivo"
+        case opera > 0 : final = final + ", o número é positivo"
             break;
         default: final = final + ", o número é neutro"
             break;
     }
     switch (opera) {
-        case Number.isInteger(opera):
-            final = final + ", inteiro"
+        case Number.isInteger(opera) : final = final + ", inteiro"
             break;
-        default:
-            final = final + ", decimal"
+        default : final = final + ", decimal"
     } switch (opera % 2) {
-        case 0:
-            final = final + " e par"
+        case 0: final = final + " e par"
             break;
-
         default: final = final + " e ímpar"
             break;
     }

@@ -19,10 +19,8 @@
     //PROCESSAMENTO
     let resultado = 0;
     switch (p1) {
-        case "sim":
-            resultado = resultado + 1
+        case "sim": resultado = resultado + 1
             break;
-    
         default: resultado = resultado + 0
             break;
     }
@@ -30,42 +28,33 @@
         case 'sim':
             resultado = resultado + 1
             break;
-    
         default: resultado = resultado + 0
             break;
     }
     switch (p3) {
-        case 'sim':
-            resultado = resultado + 1
+        case 'sim': resultado = resultado + 1
             break;
-    
         default: resultado = resultado + 0
             break;
     }switch (p4) {
-        case 'sim':
-            resultado = resultado + 1
+        case 'sim': resultado = resultado + 1
             break;
-    
         default: resultado = resultado + 0
             break;
     }switch (p5) {
-        case 'sim':
-            resultado = resultado + 1
+        case 'sim': resultado = resultado + 1
             break;
-    
         default: resultado = resultado + 0
             break;
     }
     switch (resultado) {
-        case 2:
-            alert('a pessoa é suspeita')
+        case 2: alert('a pessoa é suspeita')
             break;
         case 3:
         case 4:
             alert('a pessoa é cúmplice')
             break;
-            case 5:
-                alert("a pessoa é a assassina!")
+            case 5: alert("a pessoa é a assassina!")
             break;
         default: alert("inocente")
             break;
