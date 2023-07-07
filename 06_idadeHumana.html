@@ -8,11 +8,24 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
+    let idadeCao = parseInt(Number(prompt("Digite a idade do seu cachorro")));
+    let porteCao = prompt("Digite o porte do cão (P-pequeno, M-médio, G-grande)").toUpperCase().trim();
+    let idadeHumana;
 
-    
+
     // PROCESSAMENTO
-
+    switch (porteCao) {
+        case "P": idadeHumana = idadeCao * 5;
+            break;
+        case 'M': idadeHumana = idadeCao * 6;
+            break;
+        case "G" : idadeHumana = idadeCao * 7;
+            break;
+        default: alert(`valores inválidos`)
+            break;
+    }
+    if (idadeCao !== undefined) alert(`A idade do cão é ${idadeHumana} anos de acordo com a idade humana.`);
     
     // SAÍDA
 
-    </script>
+</script>
